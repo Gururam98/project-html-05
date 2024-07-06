@@ -1,0 +1,73 @@
+h1{
+    color: #0f5571;
+    border: 2px solid black;
+    background-color: #a4c76a;
+    border-radius: 50px;
+ }
+ #face{
+     border: 2px solid black;
+     height: 350px;
+     width:350px;
+     background-color: yellow;
+     border-radius: 200px;
+     margin-top: 100px;
+ }
+ #eye-container{
+     position: absolute;
+     /* border:1px solid black;*/
+     width: 270px;
+     height: 100px;
+     top:230px;
+     left: 500px;
+ }
+ #left-eye,#right-eye{
+     position: absolute;
+     border: 1px solid black;
+     height: 100px;
+     width: 100px;
+     background-color: black;
+     border-radius: 200px;
+ }
+ #right-eye{
+     left:160px;
+     transition: transform 1.5s ease-in-out;
+ }
+ #left-eye::before,#right-eye::before{
+     content: "";
+     position: absolute;
+     border: 1px solid white;
+     width: 30px;
+     height: 30px;
+     background-color: white;
+     border-radius: 200px;
+     top:35px;
+     left: 35px;
+ }
+ #left-eye{
+     right:150px;
+     transition: transform 1.5s ease-in-out;
+ }
+ #mouth{
+     position: absolute;
+     border: 1px solid black;
+     height:80px;
+     width:140px;
+     background-color: black;
+     top: 380px;
+     left:570px;
+     border-radius: 10px 10px 100px 100px;
+     transition: transform 1.5s linear;
+ }
+ #right-eye:hover{
+     transform: scale(0) ;
+ }
+ #left-eye:hover{
+     transform: scale(0);
+ }
+ #mouth:hover{
+     transform: scale(1.4);
+ }
+ body{
+     background-color: #a0c0ab;
+ }
+ 
